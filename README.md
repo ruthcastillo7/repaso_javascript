@@ -59,4 +59,13 @@ Se utilizan para manipular y operar sobre colecciones de datos, como arrays, lis
 5. `Eliminar:` **POP** elimina el ultimo elemento, mientras que **SHIFT** elimina el primer elemento del array
 6. `Ordenar:` **SORT** quiero que ordene de manera ascendente, o de manera alfabetica [1,2,3] o [a,b,c].
 7. `Filter:` queremos filtrar elementos que no cumplen con ciertas condiciones.
-8. ![alt text](image-2.png) 
+8. ![alt text](image-2.png)
+
+### "SCOPE" de "LET" y "VAR"
+Scope (ambitode ejecucion). es como un contenedor que alverga todaslas variables que han sido declaradas dentro de un bloque o funcion del codigo. Dependiendo de donde y como se declare el ambito esta variable puede cambiar.
+
+1. `GLOBAL:` **globalVar** es inicializada o declarada fuera del bloque.
+2. `LOCAL:` **localVar** solo se puede acceder dentro de ese loque de codigo
+
+- `VAR:` es un tipo de variable que sin importar en que bloque de codigo la declaremos podemos acceder desde cualquier lugar a este.
+- `LET:` es un tipo de variable que solo podemos acceder unicamente a esta dentro un solo bloque de codigo.

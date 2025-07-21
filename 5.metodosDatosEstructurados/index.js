@@ -44,3 +44,33 @@ todasLasFrutas.reverse();
 todasLasFrutas.sort();
 console.log(todasLasFrutas);
 // ["banana","kiwi","manzana","naranja","sandia"]
+
+
+// SCOPE
+let globalVar = "Soy global";
+function test() {
+    //console.log(globalVar)
+}
+//test();
+
+function test() {
+    let localVar = "Soy Local"
+    //console.log(localVar);
+}
+//test2();
+
+// VAR: podremos volver a reutilizarla
+if (true) {
+    var nombre="hola";
+}
+console.log(nombre);
+
+var like = 0;
+function darLike(){
+    like = like + 1;
+}
+
+// LET: se puede reasignar solo en su bloque
+function restarLike(){
+    let like = like - 1;
+}
