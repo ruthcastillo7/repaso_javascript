@@ -49,6 +49,18 @@ Tenemos dos pasos para crear una variable/constante
 - `const` Usar cuándo el valor será el mismo siempre.
   let y`var` ambos nos permite crear variables su única diferecia es el alcance, ámbito o **scope**.
 ## 3. OPERADORES
+Su clasificacion general se divide en tres:
+1. `Operadores unarios:` los operadores unarios son aquellos que tienen el opeador a la izquierda del valor (tipo de dato) y que retornan un nuevo valor.
+   - operador de negacion
+2. `Operadores binarios:` los operadores binarios son aquellos que estan en medio de dos valores y que retornan un unico valor.
+   - operadores aritmeticos
+   - operadores de comparacion
+   - operadores logicos
+3. `Operadores ternarios:` los operadores terciarios son aquellos que evaluan y retornan un solo valor.
+   - operador condicional: se usan cuando tenermos la estructura if, se obtienen valores true o false.
+> [!TIP] 
+> EXPRECION: es un valor complejo que sera solucionado y nos retornara un nuevo resultado o valor. Todos los operadores son EXPRECIONES
+## CONTROLES DE FLUJO
 ## 4. FUNCIONES
 ## 5. Metodos para trabajar con datos estructurados
 Se utilizan para manipular y operar sobre colecciones de datos, como arrays, listas, mapas, etc. Estos métodos, a menudo llamados métodos de clase, son bloques de código que encapsulan la lógica para procesar esos datos. Permiten realizar acciones como agregar, eliminar, buscar, ordenar y transformar los datos dentro de la estructura. 
@@ -62,10 +74,11 @@ Se utilizan para manipular y operar sobre colecciones de datos, como arrays, lis
 8. ![alt text](image-2.png)
 
 ### "SCOPE" de "LET" y "VAR"
-Scope (ambitode ejecucion). es como un contenedor que alverga todaslas variables que han sido declaradas dentro de un bloque o funcion del codigo. Dependiendo de donde y como se declare el ambito esta variable puede cambiar.
+Scope (ambitode ejecucion o el alcance). es como un contenedor que alverga todaslas variables que han sido declaradas dentro de un bloque o funcion del codigo. Dependiendo de donde y como se declare el ambito esta variable puede cambiar.
 
 1. `GLOBAL:` **globalVar** es inicializada o declarada fuera del bloque.
 2. `LOCAL:` **localVar** solo se puede acceder dentro de ese loque de codigo
 
 - `VAR:` es un tipo de variable que sin importar en que bloque de codigo la declaremos podemos acceder desde cualquier lugar a este.
 - `LET:` es un tipo de variable que solo podemos acceder unicamente a esta dentro un solo bloque de codigo.
+## DOM
