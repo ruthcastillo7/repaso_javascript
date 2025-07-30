@@ -65,13 +65,12 @@ console.log(dni)
 
 
 //Operadores ternarios (condicional)
-// en caso de que no se cumpla la condicion, IF permite permite agregar una condicion
-// ELSE que incluye un bloque de codigo que se ejecuta al no cumplirse la primera condicion
-// no puede haber un ELSE sin compañia del IF
-var aprobe = true;
-if (aprobe == true) {
-    console.log("de vacaciones 😆!!!")
-}
-else {
-    console.log("a recuperacion 😢")
-};
+//1. el primer valor debe ser un valor boleano
+//2. el segundo valor se mostrara si el primer valor es verdad
+//3. el tercer valor se mostrara si el segundo valor es falso
+let ternario=true?"verdadero":"falso" //los dos puntos separan los mensajes de respuesta
+console.log(ternario)
+
+let edad4=17
+let ternario1=edad4>18?"eres mayor de edad":"eres menor"
+console.log(ternario1)

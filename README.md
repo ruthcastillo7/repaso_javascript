@@ -60,9 +60,18 @@ Su clasificacion general se divide en tres:
    - operador condicional: se usan cuando tenermos la estructura if, se obtienen valores true o false.
 > [!TIP] 
 > EXPRECION: es un valor complejo que sera solucionado y nos retornara un nuevo resultado o valor. Todos los operadores son EXPRECIONES
-## CONTROLES DE FLUJO
-## 4. FUNCIONES
-## 5. Metodos para trabajar con datos estructurados
+## 4. CONTROLES DE FLUJO
+Nuestros programas en JS contienen mas de una sentencia y las sentencias son ejecutadas una a una como si fuera una historia, de arriba hacia abajo. 
+- `control de decision (if-else):` JavaScript nos permite permite crear caminos alternativos en nuestro programa, dependiendo de una desiciona esto se le conoce como caminos o ejecucioncondiciconal, que ejecutara una sentencia u otra teniendo en cuenta la condicion asi podemos crear multiples caminos u opciones en nuestro programa.
+Si tenemos una condicion verdadera se ejecutara una sentencia, si tenemos una condicion false se ejecutara otra sentencia totalmente distinta.
+> [!WARNING] 
+> OBSERVACION: la ejecucion condicional rompe el flujo normal de un programa.
+- `bucles (for):`
+- `bucles (while):`
+> [!TIP] 
+> SENTENCIAS: es una linea de codigo que hace una sola cosa. Para diferenciar una sentencia al terminar una linea de codigo se termina con un ";".La sentencia esta conformada por valores, variables, funciones, etc.
+## 5. FUNCIONES
+## 6. Metodos para trabajar con datos estructurados
 Se utilizan para manipular y operar sobre colecciones de datos, como arrays, listas, mapas, etc. Estos métodos, a menudo llamados métodos de clase, son bloques de código que encapsulan la lógica para procesar esos datos. Permiten realizar acciones como agregar, eliminar, buscar, ordenar y transformar los datos dentro de la estructura. 
 1. `Acceder:`
 2. `Crear:`
@@ -74,6 +83,8 @@ Se utilizan para manipular y operar sobre colecciones de datos, como arrays, lis
 8. ![alt text](image-2.png)
 
 ### "SCOPE" de "LET" y "VAR"
+El scope se usa en variables.
+
 Scope (ambitode ejecucion o el alcance). es como un contenedor que alverga todaslas variables que han sido declaradas dentro de un bloque o funcion del codigo. Dependiendo de donde y como se declare el ambito esta variable puede cambiar.
 
 1. `GLOBAL:` **globalVar** es inicializada o declarada fuera del bloque.
