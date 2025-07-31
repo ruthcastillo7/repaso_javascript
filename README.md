@@ -62,12 +62,19 @@ Su clasificacion general se divide en tres:
 > EXPRECION: es un valor complejo que sera solucionado y nos retornara un nuevo resultado o valor. Todos los operadores son EXPRECIONES
 ## 4. CONTROLES DE FLUJO
 Nuestros programas en JS contienen mas de una sentencia y las sentencias son ejecutadas una a una como si fuera una historia, de arriba hacia abajo. 
-- `control de decision (if-else):` JavaScript nos permite permite crear caminos alternativos en nuestro programa, dependiendo de una desiciona esto se le conoce como caminos o ejecucioncondiciconal, que ejecutara una sentencia u otra teniendo en cuenta la condicion asi podemos crear multiples caminos u opciones en nuestro programa.
+1. `control de decision (if-else):` JavaScript nos permite permite crear caminos alternativos en nuestro programa, dependiendo de una desiciona esto se le conoce como caminos o ejecucioncondiciconal, que ejecutara una sentencia u otra teniendo en cuenta la condicion asi podemos crear multiples caminos u opciones en nuestro programa.
 Si tenemos una condicion verdadera se ejecutara una sentencia, si tenemos una condicion false se ejecutara otra sentencia totalmente distinta.
 > [!WARNING] 
 > OBSERVACION: la ejecucion condicional rompe el flujo normal de un programa.
-- `bucles (for):`
-- `bucles (while):`
+1. `Bucles (for):` **(para)** Realiza un bucle una determinada cantidad de veces. Es un bucle controlado por un contador, que lo tiene implicado en su sintaxis.
+Se compone de 3 partes:
+- **Iniciación  de la variable:**  se utilizará en la condición, y solo se ejecuta una vez al principio del ciclo.
+- **Condición de fin del ciclo:** la expresión se evalúa al inicio de una interacción.
+- **Modificación de la variable:** se ejecuta al final de cada interacción.
+1. `Bucles (while):` **(mientras)** Permite que un bloque de codigo se repite una cantidada de veces "mientras" se cumpla una derminada condicion.
+- La condicion se evalua siempre al **inicio del ciclo/bucle**.
+- Si la condicion es valida, **ingresa bucle** y **ejecuta el codigo**
+- Cuando la condicion no se cumple mas lo que pasa con el bucle es que automaticamente se corta, no se repite mas y termina la ejecucion del programa a menos que haya otra condicion despues.
 > [!TIP] 
 > SENTENCIAS: es una linea de codigo que hace una sola cosa. Para diferenciar una sentencia al terminar una linea de codigo se termina con un ";".La sentencia esta conformada por valores, variables, funciones, etc.
 ## 5. FUNCIONES

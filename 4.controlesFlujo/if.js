@@ -28,39 +28,63 @@ if (firtsNumber>secondNumber){
 }
 
 //crear programa que muestre el numero en texto
-let numeroIngresado=1
-numeros = [0, 1, 2, 3, 4]
-
-if (numeroIngresado==numeros){
-    numerosTexto = ["cero", "uno", "dos", "tres", "cuatro"]
-    if (numeroIngresado==0){
-        console.log(numerosTexto[0])
-    }
-    if (numeros == 1){
-        console.log(numerosTexto[1])
-    }
-    if (numeros == 2){
-        console.log(numerosTexto[2])
-    }
-    if (numeros == 3){
-        console.log(numerosTexto[3])
-    }
+//forma del profe
+let numero=2
+if (numero==1){
+    console.log("uno")
+}
+else if (numero==2){ //if anidado = else if.  cada linea de else if es evaluada por la computadora
+    console.log("dos")
+}
+else if (numero==3){
+    console.log("tres")
+}
+else if (numero==4){
+    console.log("cuatro")
+}
+else if (numero==5){
+    console.log("cinco")
 }
 
-// SI NUMERO INGRESADO ES IGUAL A 1 ENTONCES QUIERO QUE APAREZCA DE NUMERO DE TEXTO SEGUN INDICE
+
+switch (numero) { //usa menos poder computacional
+    case 1:
+        console.log("uno")
+        break //cada que uso CASE y SWITCH se debe romper la cache ya que el switch almacena en cache
+    case 2:
+        console.log("dos")
+        break
+    case 2:
+        console.log("dos")
+        break
+    default: // DEFAUL: es como un else. pero usa menos cpu
+        console.log("fuera de rango")
+        break
+}
 
 
 
-// function numeroIngresado (num)
-// numeros = ["cero", "uno", "dos", "tres", "cuatro"]
-// if {0 <= Number <= 10
-//     return (numeros[num])
-// }else{
-//     return("numero no valido")
+
+
+
+
+// let numeroIngresado=1
+// numeros = [0, 1, 2, 3, 4]
+// if (numeroIngresado==numeros){
+//     numerosTexto = ["cero", "uno", "dos", "tres", "cuatro"]
+//     if (numeroIngresado==0){
+//         console.log(numerosTexto[0])
+//     }
+//     if (numeros == 1){
+//         console.log(numerosTexto[1])
+//     }
+//     if (numeros == 2){
+//         console.log(numerosTexto[2])
+//     }
+//     if (numeros == 3){
+//         console.log(numerosTexto[3])
+//     }
 // }
-// num=Number(String("numero (1-10): "))
-// console.log(numeroIngresado)
-
 
 
 
