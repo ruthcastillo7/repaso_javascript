@@ -78,6 +78,23 @@ Se compone de 3 partes:
 > [!TIP] 
 > SENTENCIAS: es una linea de codigo que hace una sola cosa. Para diferenciar una sentencia al terminar una linea de codigo se termina con un ";".La sentencia esta conformada por valores, variables, funciones, etc.
 ## 5. FUNCIONES
+La funcion en javascript son bloques de codigo que se ejecutan de manera independiente, podemos decir tambien que son `mini programas` que toman datos comso entrada y retornan otros datos como salida.
+Las funciones son fundamentales para el ordenamiento del codigo,ademas nos permite separar de una manera las ordenadanuestra logica y evitar repetir el codigo muchas veces.
+Existen 3 tipos de funciones:
+#### 1. Funciones de declaracion
+Este tipo defunciones la mas conocida y la mas usada, su estructura es la siguiente:
+![alt text](image-3.png)
+> [!TIP] 
+> las funciones siempre deben recibir dato de entrada y de salida
+#### 2. Funciones por expresión
+`Define una función que se almacena en una variable, permitiendo su ejecución posterioR.` Una funcion creada en su forma de expresion solo puede ser ejecutada despues de que la ejecucion haya llegado a la declaracion de esa variable. Antes de la ejecucion llegue ahi, dicha funcion no existira.
+
+
+#### 3. Funciones flecha (arrow fuction)
+Las Funciones Flechas son una forma corta de escribir funciones que aparece en JavaScript a partir de ECMAScript 6. Básicamente, se trata eliminar la palabra function y añadir => antes de abrir las llaves.
+
+Esta forma se utiliza cuando las funciones estan puestas en su modo de expresion `let func =(arg1, arg2, ...argN) => expression`. Se llaman asi por que utiliza una flecha para indicarlas y es lomismo que escribir esto:`let func = function(arg1, arg2, ...argN) {return expression;};`
+
 ## 6. Metodos para trabajar con datos estructurados
 Se utilizan para manipular y operar sobre colecciones de datos, como arrays, listas, mapas, etc. Estos métodos, a menudo llamados métodos de clase, son bloques de código que encapsulan la lógica para procesar esos datos. Permiten realizar acciones como agregar, eliminar, buscar, ordenar y transformar los datos dentro de la estructura. 
 1. `Acceder:`
