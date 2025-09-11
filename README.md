@@ -85,18 +85,73 @@ Existen 3 tipos de funciones:
 Este tipo defunciones la mas conocida y la mas usada, su estructura es la siguiente:
 ![alt text](image-3.png)
 > [!TIP] 
-> las funciones siempre deben recibir dato de entrada y de salida
+> las funciones siempre deben recibir dato de entrada y de salida. Solo retorna un dato que es la respuesta
+
 #### 2. Funciones por expresión
-`Define una función que se almacena en una variable, permitiendo su ejecución posterioR.` Una funcion creada en su forma de expresion solo puede ser ejecutada despues de que la ejecucion haya llegado a la declaracion de esa variable. Antes de la ejecucion llegue ahi, dicha funcion no existira.
+`Una función que se almacena en una variable, permitiendo su ejecución posterioR.` Una funcion creada en su forma de expresion solo puede ser ejecutada despues de que la ejecucion haya llegado a la declaracion de esa variable. Antes de la ejecucion llegue ahi, dicha funcion no existira.
 
 
 #### 3. Funciones flecha (arrow fuction)
 Las Funciones Flechas son una forma corta de escribir funciones que aparece en JavaScript a partir de ECMAScript 6. Básicamente, se trata eliminar la palabra function y añadir => antes de abrir las llaves.
 
 Esta forma se utiliza cuando las funciones estan puestas en su modo de expresion `let func =(arg1, arg2, ...argN) => expression`. Se llaman asi por que utiliza una flecha para indicarlas y es lomismo que escribir esto:`let func = function(arg1, arg2, ...argN) {return expression;};`
+> [!TIP] 
+> `=>`  : en base a la entrada devuelve esta salida
 
 ## 6. Metodos para trabajar con datos estructurados
-Se utilizan para manipular y operar sobre colecciones de datos, como arrays, listas, mapas, etc. Estos métodos, a menudo llamados métodos de clase, son bloques de código que encapsulan la lógica para procesar esos datos. Permiten realizar acciones como agregar, eliminar, buscar, ordenar y transformar los datos dentro de la estructura. 
+Se utilizan para manipular y operar sobre colecciones de datos, como arrays, listas, mapas, etc. Estos métodos, a menudo llamados métodos de clase, son bloques de código que encapsulan la lógica para procesar esos datos. Permiten realizar acciones como agregar, eliminar, buscar, ordenar y transformar los datos dentro de la estructura.
+
+Los metodods son funciones que dan funcionalidades extras a los tipos de datos e los cuales se aplica.
+un metodo es antesedido por un tipo de datos y un punto.
+**Ejemplo**
+el ejemplo mas claro de un metodo es el `.length` - este metodo nos permite o nos retorna la cantidad de caracteres de un string o la cantidad de elementos de una lista.
+```js
+"hola".length //4
+[2,5,4,6,7].length //3
+```
+> [!TIP] los metodos en su mayoria solo se aplica a tipo de datos string, listas y objetos, en su gran parte son aplicaciones para listas.
+
+### 6.1. Metodos para STRING
+#### 1. LENGTH
+devuelve la longitud de una cadena
+```js
+let mensaje="hola como estan"
+console.log(mensaje.length)
+//retorna -> 15
+```
+#### 2. toLowerCase
+devuelve una cadena en minusculas
+```js
+let texto="HOLA"
+console.log(texto.toLowerCase())
+//retorna -> hola
+```
+#### 3. toUpperCase
+devuelve una cadena en minusculas
+```js
+let texto="hola"
+console.log(texto.toUpperCase())
+//retorna -> HOLA
+```
+### 4. concat
+combina el texto de dos a mas cadenas
+```js
+let nombre="kcapa"
+let saludo="hola"
+//let concatenando=saludo+nombre
+console.log(saludo.concat(nombre))
+
+let cad1="oh "
+let cad1="me "
+let cad1="vengo"
+console.log(car1.concat(cad2,cad3))
+//retorna -> oh me vengo
+```
+### 6.2. Metodos para LISTAS
+### 6.3. Metodos para STRING
+
+
+## Metodos para ARRAY
 1. `Acceder:`
 2. `Crear:`
 3. `Modificar:` `Une listas:` **CONCAT** permite que dos listas se unan o concatenen en un array [1,2]. **REVERSE** hace lo mismo pero en orden inverso [2,1].
