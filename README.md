@@ -133,7 +133,7 @@ let texto="hola"
 console.log(texto.toUpperCase())
 //retorna -> HOLA
 ```
-### 4. concat
+#### 4. concat
 combina el texto de dos a mas cadenas
 ```js
 let nombre="kcapa"
@@ -147,6 +147,41 @@ let cad1="vengo"
 console.log(car1.concat(cad2,cad3))
 //retorna -> oh me vengo
 ```
+#### 5. trim
+este metodo elimina los espacios que existen al inicio o final de una cadena o texto
+```js
+let texto ="   hola"
+let nuevoTexto=texto.trim() //hola
+let otroTexto="hola"
+let nuevoOtroTexto=otroTexto.trim() //hola
+```
+#### 6. slice - corte
+Este metodonos permite extraer partes de una cadena especificando sus indices, donde comenzar y hasta donde mostrar ( la mayoria de metodos se usan en string y arrays).
+```js
+let parrafo ="hola soy percy"
+// solo quiero que me muestre percy
+//siempre al utimo numero lo corta, por ello aumentar uno
+parrafo.slice(9) //percy (para todo en adelante de 9, o se "10, 11, etc)
+parrafo.slice(5.8) //soy (para unaparte en especifico)
+
+// para el caso de que no queramos que el texto original se modifique podemos alamcenarlo en una variable.
+let nombre=parrafo.slice(9) 
+let soy=parrafo.slice(5.8)
+```
+#### 7. split
+Este metodo retorna una lista basandose en un separador que se le indique
+```js
+let parrafo="solo se que nada se"
+parrafo.split("") //["solo","se","que","nada","se"]
+
+//esto hara que me devuelva las palabras divididas en base a lo que hay en los parentecis
+let url="google.om/search?=gatitos"
+let gatitos=url.split=("=") //["google.om/search?","gatitos"]
+console.log(gatitos[1]) //gatitos
+let listaFrutas="manzana,tomate,pera,naranja"
+listaFrutas.split=(",") // ["manzana","tomate","pera","naranja"]
+```
+
 ### 6.2. Metodos para LISTAS
 ### 6.3. Metodos para STRING
 
@@ -171,4 +206,6 @@ Scope (ambitode ejecucion o el alcance). es como un contenedor que alverga todas
 
 - `VAR:` es un tipo de variable que sin importar en que bloque de codigo la declaremos podemos acceder desde cualquier lugar a este.
 - `LET:` es un tipo de variable que solo podemos acceder unicamente a esta dentro un solo bloque de codigo.
-## DOM
+
+## 7. es6
+## 8. DOM
