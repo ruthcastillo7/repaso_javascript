@@ -183,6 +183,107 @@ listaFrutas.split=(",") // ["manzana","tomate","pera","naranja"]
 ```
 
 ### 6.2. Metodos para LISTAS
+#### Crear una lista
+```js
+let lista=[]
+```
+#### Agregar elementos a una lista
+Agregar a traves del indice
+```js
+lista[0]="manzana"
+``` 
+#### PUSH
+El metodo PUSH (empujar al final) agrega elementos al final de una lista
+```js
+let lista=[]
+lista.push("manzana")
+``` 
+```js
+// Usando UNSHIFT y PUSH
+let amigos=["e","i","o"]
+amigos.unshift("a")
+amigos.push("u")
+console.log(amigos);
+// retorna ["a","e","i","o","u"]
+``` 
+
+#### UNSHIFT
+El metodo UNSHIFT agrega elementos al inicio de una lista
+```js
+let amigos=["flor","rocio","percy"]
+amigos.unshift("ronny")
+// retorna ["ronny","flor","rocio","percy"]
+``` 
+### Removiendo elementos
+#### POP
+el metodo POP al contrario de PUSH extrae el ultimo elemento de una lista
+```js
+let frutas=['🍎','🍍','🍉','🍐','🍌','🍒']
+let cerecita=frutas.pop()
+cerecita // '🍒'
+frutas // retorna ['🍎','🍍','🍉','🍐','🍌']
+```
+#### SHIFT
+El metodo `pop` al contrario de unshif, extrae elprimer elemento de una lista.
+```js
+let frutasDos=['🍎','🍍','🍉','🍐','🍌','🍒']
+frutasDos.shift() // se lo queda para él, primer elemento
+frutasDos.pop() // se lo queda para él, el ultimo elemento
+frutasDos // ['🍍','🍉','🍐','🍌']
+```
+### Eliminando elementos de una lista
+#### DELETE
+Elimina un elementoen base a su indice `(no elimina el espacio de memoria, solo el tipo de dato).`
+```js
+let texto=["hola","como"," ","estas"]
+delete texto[2]
+texto 
+// ["hola","como","undefined","estas"]
+```
+#### SPLICE
+Este metodo elimina (tambien agrega) el elemento en base a su indice y a la cantidad de elementos a eliminar `necesita 2 parametros (indice,cantidad a eliminar)`: INDICE y cuantos elementos quiero ELIMINAR
+```js
+let vocal=["a","e","i","o","u"]
+vocal.splice(2,1)
+vocal // ["a","e","o","u"]
+vocal.splice(0,3)
+vocal // ["u"]
+```
+> [!WARNING]
+> A diferencia de DELETE, aqui SI se ELIMINA en el primer splice ya no se puede usar para el segundo splice. Lo que se elimino en el 1er splice ya no aparece en el 2do splice ya que el codigo se reescribe. Por ello tener cuidado.
+
+### Combinando o uniendo listas
+#### CONCAT
+Este metodo crea un nuevo ARRAY que contiene los elementos del array original seguido por los elementos de unos a mas arrays proporcionados.
+```js
+let amigosPrimaria=['alfredo','luis','edgar']
+let amigosSecundaria=['edison','remy','miguel']
+let amigosSuperios=['josue','marlon','handy']
+let friends=amigosPrimaria.concat(amigosSecundaria,amigosSuperios)
+friends // ['alfredo','luis','edgar','edison','remy','miguel','josue','marlon','handy']
+```
+### Metodos para iterar elementos
+####
+
+### Metodos para buscar elementos
+### CALL BACK
+son funciones que reciben como parametro una funcion anonima.
+#### FIND (es un call back)
+Recorre todos los elementos y devueleve lo que le pido.
+En cada iteracion el parametro guarda cada elemento de la lista.
+es un metodo call back, al que le pasamos una funcion.
+```js
+let amigos=['alfredo','luis','edgar']
+amigos.find(el=>{el=='alfredo'})
+// parametro : "el=>" -> guarda el elemento : "{el=='alfredo'}"
+```
+#### FILTER (es un call back)
+``` js
+let numero=[5,6,10,2,0,-14,20,50,9,11]
+let numerosMenores=numeros.filter(num=>num<11)
+```
+
+
 ### 6.3. Metodos para STRING
 
 
@@ -209,3 +310,4 @@ Scope (ambitode ejecucion o el alcance). es como un contenedor que alverga todas
 
 ## 7. es6
 ## 8. DOM
+

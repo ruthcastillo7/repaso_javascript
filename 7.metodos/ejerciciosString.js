@@ -34,7 +34,10 @@ console.log(contarVocales(otroTexto,vo))
 
 // AVERIGUAR: expresiones regulares: son simbolos que permiten comparar si un texto
 //contiene los caracteres que se pieden
-
+// Las expresiones regulares son patrones que se utilizan para hacer coincidir combinaciones
+//  de caracteres en cadenas. En JavaScript, las expresiones regulares también son objetos.
+//   Estos patrones se utilizan con los métodos exec() y test() de RegExp, y con match(),
+//    matchAll(), replace(), replaceAll(), search() y split() métodos de String. 
 
 
 /*
