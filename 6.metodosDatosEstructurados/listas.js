@@ -86,3 +86,42 @@ amigos2
 let numeros=[5,6,10,2,0,-14,20,50,9,11]
 let numerosMenores=numeros.filter(num=>num<11)
 console.log(numerosMenores)
+
+// forEach
+let numeros3=[1,2,3,4,5,6]
+numeros3.forEach(n=>{console.log()})
+////// esta es una funcion anonima de tipoflecha :
+////// conts miFuncion=a=>{}
+numeros3.forEach(n=>{console.log(n+1)})
+////////// todos los numeros elevados a la potencia de 2
+numeros3.forEach(n=>{console.log(n**2)})
+
+// Map
+let number=[1,2,3,4,5,6]
+newNumber=number.map(n=>{return n+1})
+console.log(newNumber)
+
+// INCLUDES
+let vocales2=["a","i","o","u"]
+let buscaE=vocales2.includes("e")
+console.log(buscaE)
+let buscaA=vocales2.includes("a")
+console.log(buscaA)
+
+let fruits=["pera","higo","tomato"]
+let estaPera=fruits.includes("pera")
+console.log(estaPera)
+let estaNaranka=fruits.includes("naranja")
+console.log(estaNaranka)
+
+// FILTER
+let listaNumber=[10,11,3,20,5]
+// deseo una lista con los numeros que sea mayores a 10
+let mayorDiez=listaNumber.filter(n=>{return n>10})
+console.log(mayorDiez)
+// de una lista de numero del 1 a 10 usando filter eliminar el numero 1
+let unoAlDiez=[1,2,3,4,5,6,7,8,9,10]
+let listaSinUno=unoAlDiez.filter(n=>{return n!=1})
+console.log(listaSinUno)
+
+// 

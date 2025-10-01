@@ -283,10 +283,99 @@ let numero=[5,6,10,2,0,-14,20,50,9,11]
 let numerosMenores=numeros.filter(num=>num<11)
 ```
 
+### Metodos para iterar una lista
+Para modificar e iterar valores
+#### 1. forEach
+Este metodo ejecuta una funcion anonima por cada elemento de un array.
+**Devuleve el valor de cada elemento de lista, pero NO devuelve en una lista**.
+forEach recorrera a todos los elementos de una lista `numeros=[1,2,3,4,5,6]` y aplicara la condicion `console.log(n+1)` segun inidique.
+```js
+let numeros=[1,2,3,4,5,6]
+numeros.forEach(n=>{console.log(n+1)}) // una funcion por cada elemento
+// 2,3,4,5,6,7
+```
+#### 2. map
+Este metodo ejecuta una funcion anonima por cada elemento de un array, generando una nueva lista. 
+**Devuelve nueva lista (array) soloque con la funcionque le haya aplicado**
+```js
+let number=[1,2,3,4,5,6]
+newNumber=number.map(n=>{return n+1})
+console.log(newNumber)
+// [2,3,4,5,6,7]
+```
+
+### Metodos para buscar elementos en una lista
+#### 1. INCLUDES
+Este metodo busca un valor en especificoy devuelve unvalor boleano, e caso de encontrar el valor buscado retorna **true** caso contrario **false**.
+**Muestra si un valor esta dentro de una lista**
+```js
+let vocales=["a","i","o","u"]
+let buscaE=vocales.includes("e")
+// retorna: false
+let buscaA=vocales.includes("a")
+// retorna: true
+```
+> [!WARNING]
+> todos los metodos siempre deben estar almacenandos en una variable
+
+#### 2. FILTER
+Este metodo se usa para encontrar elementos dentro de una lista que cumplan con cierta condicion.
+**Nos retorna listas nuevas con la condicion ya ejecutada**
+```js
+let numeros=[2,4,5,7,8,1,2,6]
+// deseo una lista con los numeros que sea menor a 4
+let nuevosNumeros=numeros.filter(n=>{n<4})
+```
+
+#### FIND
+Este metodo se usa para encontrar el primer elementoque  cumpla con cierta condicopn, a diferencia de filter solo retorna un elemnto que cioncida con la condicion.
+```js
+let lisNumeros=[10,11,3,20,5]
+//devolver el numero mayor a 10
+let menorDiez=lisNumero.find(n=>{return n>10})
+console.log(menorDiez)
+// retorna 11 - el primer elemento que coincide con la condicion.
+```
+
+### 6.3. Metodos para objetos
+#### 1. Creando un objeto
+```js
+// objeto o diccionario vacio
+let objeto={}
+```
+
+#### 2. Agregando elementos a un objeto
+recuerden que el elemento de un objetos esta conformado por `clave:valor`
+```js
+objeto["nombre"]="ruth"
+objeto["edad"]=18
+objeto["CUI"]=60414454
+```
+#### 3. Actualizando elementos de nuestro objeto
+Para realizar la actualizacion del valor de un elemento tenemos que acceder a travez de su clave y asignarle el nuevo valor.
+
+**OBSERVACION:** 
+poniendo la misma clave y cambiando el valor
+```js
+objeto["edad"]=19
+```
+#### 4. Elemento un elemento de nuestro objeto
+Para eliminar unelemento de unobjeto hacemos usode un operador unario `delete`.
+```js
+delete objeto.CUI
+```
+
+___
+> [!WARNING]
+> en OBJETOS no se usa LENGTH solo en LISTAS y STRING
+
+> [!TIP]
+> objeto: "clave:valor"
+> 
+> lista: "indice:valor"
+___
 
 ### 6.3. Metodos para STRING
-
-
 ## Metodos para ARRAY
 1. `Acceder:`
 2. `Crear:`
