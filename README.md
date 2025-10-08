@@ -425,5 +425,93 @@ nuevaLista
 ```
 > [!TIP]
 > CALL BACK: Es una funcion que ejecuta como parametro una funcion anonima y retorna la informacion que ejecuta la funcion anonima.
-## 8. DOM
 
+## 8. DOM (Document Objetc Model)
+- Segun sus siglas es Modelo de Objeto de Documento.
+- Para web es una API del navegadorm, eso significa que nos proporcionauna interfaz para comunicarnos entre HTMLy JavaScript
+- Segun sufuncionalidad DOM es elencargado de convertir documentos `HTML` y `CSS`enobjetos de `JavaScript` o en un arbol.
+- Para `JavaScript` el `DOM` es un objeto con el que podemos leer ymodificar a nuestro antojo.
+La manera como `DOM` nos permite interactual con nuestros documentos `html` y `css` son a travez de `selectores`.
+
+### SELECTORES
+Es la manera de como podremos manipular el DOM, este es el primer paso que debemos dominar para realizar operaciones de lectura o modificaciones.
+### Captura de elementos
+#### Selectores tradicionales
+Son metodos del documento, porque DOM trabaja con el documento.
+```js
+// --selectores por ID
+//<section id="mi_div"></section>
+document.getElementById("mi_div")
+// solo en este caso retorna UN ELEMENTO
+```
+![alt text](image-4.png)
+```js
+//--selectores por su atributo NAME
+//<input name="dni" value="34556">
+// dni=34556
+document.getElementByName("dni")
+// retorna TODOS los elementos
+```
+
+```js
+// --selectores por su etiqueta TAG
+// <h1></h1>
+// crea un section en html automaticamente
+document.getElementByTagName("h1")
+```
+![alt text](image-5.png)
+```js
+// --selectores por su CLASS
+//<div class=rojo></div>
+document.getElementByClassName("rojo")
+```
+
+> [!TIP]
+> En la programacionweb `DAW` se hace eluso de 2 tecnicas.
+> **Setter and Getter**
+> 1. Obtencion de datos (get).
+> 2. Creacion de datos (set) (guardar).
+
+#### Selectores modernos o avanzados
+```js
+// para la captura de un elemento, o el primer elemento que coincida con la busqueda
+document.querySelector()
+//  BUSCA Y OBTIENE el elementoque coincida con el nombre de la clase
+document.querySelector(".nombre_clase")
+
+//  BUSCA Y OBTIENE el elementoque coincida con el nombre del id
+document.querySelector("#nombre_id")
+
+//  BUSCA Y OBTIENE el elementoque coincida con el nombre de la etiqueta
+document.querySelector("p")
+// acceder a traves de dni, como el tag name
+document.querySelector(".input[name="dni"]")
+
+// Para acceder a todas las coincidencias
+// esto retorna un array con todas lascoincidencias
+document.querySelectorAll(".nombre_clase")
+
+// si queremos acceder gerarquicamente se accede comoen el caso de poner una imagen de mipc en un archivo html, debo ingresar carpeta dentro de otra carpeta
+```
+
+#### Acceder a contenido y actualizar contenido
+Una vez capturado el elemento con `querySelector` pueden hacer uso de `textContent` para acceder alcontenido del elemento,de esta misma forma podemos editar o actualizar el contenido `textContent="hola"` esto es loque actualiza elcontenido anterior con el contenido quese le esta asignando.
+
+`textContent` solose usa si deseamos agregar contenidode tipo texto. Si deseamos **setear o agregar** contenido de tipo `html` sedebera usar `innerHTML`
+```js
+// <p id="text">este es un contenido</p>
+let etiquetaP=document.querySelector("#text")
+// de mi etiqueta P accede al contenido
+console.log(etiquetaP.textContent)
+
+//este es un contenido (pero es solo para texto)
+etiquetaP.textContent="nuevo texto"
+console.log(etiquetaP.textContent)
+//nuevo texto
+
+//este es un contenido (pero el contenido tiene etiquetas html)
+//<div id="contenedor"></div>
+let div=document.querySelector("#contenedor")
+div.innerHTML="<p>este es un parrafo</p>">
+```
+![alt text](image-6.png)
