@@ -169,7 +169,8 @@ let nombre=parrafo.slice(9)
 let soy=parrafo.slice(5.8)
 ```
 #### 7. split
-Este metodo retorna una lista basandose en un separador que se le indique
+Este metodo retorna una lista basandose en un separador que se le indique.
+**Combierte cadenade texto a una lista usando un separador que es usado como parametro**
 ```js
 let parrafo="solo se que nada se"
 parrafo.split("") //["solo","se","que","nada","se"]
@@ -267,6 +268,7 @@ friends // ['alfredo','luis','edgar','edison','remy','miguel','josue','marlon','
 
 ### Metodos para buscar elementos
 ### CALL BACK
+Es una funcion que ejecuta como parametro una funcion anonima y retorna la informacion que ejecuta la funcion anonima.
 son funciones que reciben como parametro una funcion anonima.
 #### FIND (es un call back)
 Recorre todos los elementos y devueleve lo que le pido.
@@ -398,5 +400,30 @@ Scope (ambitode ejecucion o el alcance). es como un contenedor que alverga todas
 - `LET:` es un tipo de variable que solo podemos acceder unicamente a esta dentro un solo bloque de codigo.
 
 ## 7. es6
+Es una implementacion de Egmas script 6
+### Arrow function
+#### Destructuring
+Este es una tecnica para el desempaquetado de listas u objetos en variables.
+Esta tecnica facilita el acceso a los elementos de una lista u objeto.
+Nos permite crear objetos para cada variable o algo asi
+```js
+let alumno={
+   "nombre":"miguel",
+   "edad":"17"
+}
+console.log(alumno.nombre)
+console.log(alumno["edad"])
+// desestructuracion
+let {nombre,edad}=alumno
+```
+> [!TIP]
+> SPREAD operation :permite convertir texto a lista (como SPLIT)
+```js
+let texto="hola como estan alumnos"
+let nuevaLista=[...texto]
+nuevaLista
+```
+> [!TIP]
+> CALL BACK: Es una funcion que ejecuta como parametro una funcion anonima y retorna la informacion que ejecuta la funcion anonima.
 ## 8. DOM
 
