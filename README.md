@@ -585,4 +585,33 @@ section.style.backgroundColor="red"
 ```
 -----
 ### Eventos (tarea-averiguar)
-Captura las acciones del usuario
+Captura las acciones del usuario.
+
+Son `señales o notificaciones que se producen cuando ocurre una acción en una página web`, como un clic de ratón, la pulsación de una tecla, el envío de un formulario o la carga de la página. JavaScript permite escuchar estos eventos y ejecutar código de respuesta cuando ocurren.
+Tenemos algunos de los ejemplos de eventos mas comunes que podemos encontrar en el DOM:
+
+**1. MOUSE EVENTS:**
+```
+- clic : se hace clic sobre un elemento.
+- contextmenu : cuando se hace clic derecho en un elemento.
+- mouseover : cuando el raton pasa por encima del elemento / cuando sale del elemento.
+- mousemove : cuando se mueve el raton.
+```
+**2. KEYBOARD EVENTS:**
+```
+- keydown y keyup : cuando una tecla se pulsa y se suelta.
+```
+**3. FORM ELEMENT EVENTS:**
+```
+- submit : cuandose envia un <form>
+- focus : cuando se hace focus sobre un elemento por ejemplo un <input>
+Es un pseudo-clase ":focus" en CSS, o el atributo autofocus en HTML, y es útil para mejorar la experiencia del usuario al dirigir la atención automáticamente a un elemento específico. 
+```
+**4. DOCUMENT EVENTS:**
+```
+- DOMContentLoaded : cuando el HTML termina de cargar.
+```
+**5. CSS EVENTS:**
+```
+- transitionend : cuando una animacion de CSS termina
+```
