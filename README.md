@@ -600,6 +600,7 @@ Tenemos algunos de los ejemplos de eventos mas comunes que podemos encontrar en 
 **2. KEYBOARD EVENTS:**
 ```
 - keydown y keyup : cuando una tecla se pulsa y se suelta.
+- keypress: mantienes precionada latecla.
 ```
 **3. FORM ELEMENT EVENTS:**
 ```
@@ -615,3 +616,43 @@ Es un pseudo-clase ":focus" en CSS, o el atributo autofocus en HTML, y es útil 
 ```
 - transitionend : cuando una animacion de CSS termina
 ```
+
+##### Explicacion del profe:
+SON VISIBLES PARA LOS USUARIOS. Existen situaciones en las que necesitamos realizar una accion **cuando ocurra un determinado caso**, esto se puede trabajar con una `estructura de decicion` o puedo trabajar con una `estructura de repeticion(bucle).`
+Esto se puede manejar de esta manera cuando sabemos que es lo que tieneque suceder.
+
+Existen situaciones en las que no sabemos exactamente cuando tenemosqueactivar nuestra funcionalidad,porejemplo no podemos presecir **cuando** un usuario de nuestra pagina hara click en un boton, o en que momento reproducira una cancionola pausara, es esta situacion es cuando tenemos que manejar la funcionalidad a travez de **eventos**.
+
+`El evento es una notificacion de una caracteristica que acaba de suceder ALGO VISIBLE.`
+
+Veamos algunos ejemplos de eventos clasicos:
+
+1. Evento `click`: la ejecucion de una funcionalidad.
+2. Evento `keydown`: pulsamos una tecla.
+3. Evento `play`
+4. Evento `wheel`: scroll con la rueda del raton.
+5. Evento `beforeprint`: cuando el usuario activa la opcion de imprimir aparece un cuadro de diálogo.
+![alt text](image-7.png)
+usuario ejecuta evento -> evento ejecuta funcion
+------
+Maneras de manejar un evento
+### 1. Eventos desde HTML - desde ATRIBUTOS
+Podemos escuchar los eventos a travez de atributos de un elemento html.
+Para ma informacion ver el archivo `eventHTML`
+- archivo **index.html**
+```html
+// dispara un evento onclick y luego dispara una funcion
+<button onclick="alert('hola')">Saludar</button>
+<!-- si iniciamoscon comillas, nose puede hacer esto: "alert("hola")" - siempre esto: "alert('hola')" -->
+```
+esta propiedad se agrega a cualquier elemento de html
+### 2. Eventos desde JavaScript
+La opción recomendada para manejar los eventos desde ficheros (archivos) `.js`
+
+Esto evita tener nombres sueltos de funciones en HTML, que luego tendremos que actualizar y mantener. (el html solo se crea una vez).
+
+#### Captura de evento, metodo addEventListener
+Este metodo recibe dos parametros. El evento y la funcion a ejecutar.
+
+> [!TIP]
+> Para conocimiento: el metodo `addEventListener(event.func)` es una funcionque se comporta como una funcion de tipo `callBack`.

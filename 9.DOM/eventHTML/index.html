@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            cursor: pointer; /*de flechita a mano */
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola soy un titulo</h1>
+    <p>Parrafo descriptivo</p>
+    <button onclick="alert('hazme click')">Hazme click</button>
+    <h2>ejecutando evento desde una funcion externa</h2>
+    <input type="text" id="txt_usuario" placeholder="ingrese algo: ">
+    <button onclick="miFuncion()">Hazme otro click aqui abajo</button>
+
+    <!-- para que vea que pueda ejecutar mis propias funciones -->
+    <!-- CONST se usa cuando nunca variaporque es una contante -->
+    <script>
+        function miFuncion(){
+            const etiqueta=document.querySelector("p")
+            //const contenidoP=etiquetaP.textContent
+            const contenidoP=etiquetaP //en el usode etiquetas input es VALUE
+            alert(contenidoP)
+        }
+    </script>
+</body>
+</html>
